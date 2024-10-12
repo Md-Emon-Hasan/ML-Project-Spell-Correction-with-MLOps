@@ -2,7 +2,7 @@
 
 Welcome to the **Spell Correction with MLOps** repository! This project utilizes machine learning and MLOps practices to build a robust spell correction system. It employs Docker for containerization, GitHub Actions for CI/CD, and is deployed on Render for live hosting.
 
-![Capture](![Capture1](https://github.com/user-attachments/assets/5deac8b3-a7ac-4869-bd14-89ab7ad7c9af))
+![Capture1](https://github.com/user-attachments/assets/5deac8b3-a7ac-4869-bd14-89ab7ad7c9af)
 
 ## 📋 Contents
 
