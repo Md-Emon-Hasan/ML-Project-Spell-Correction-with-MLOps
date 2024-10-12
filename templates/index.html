@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Correction</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"><!-- Link to the external CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Spell Correction Application using Artificial Intelligence</h1>
+        <h1 class="name"><a href="https://github.com/Md-Emon-Hasan" target="_blank">Made By Emon Hasan</a></h1>
+        <form method="POST" action="/spellcheck">
+            <div class="form-group">
+                <label for="text_input">Enter text:</label>
+                <input type="text" id="text_input" name="text_input" class="form-control" required
+                    placeholder="Type your text here...">
+            </div>
+            <input type="submit" value="Check Spelling" class="btn btn-primary">
+        </form>
+        {% if original_text %}
+        <h2>Original Text:</h2>
+        <p>{{ original_text }}</p>
+        <h2>Corrected Text:</h2>
+        <p>{{ corrected_text }}</p>
+        {% endif %}
+    </div>
+    <footer>
+        <p>&copy; 2024 Spell Correction Application | <a href="https://www.linkedin.com/in/md-emon-hasan-695483237/" target="_blank">Emon Hasan</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
